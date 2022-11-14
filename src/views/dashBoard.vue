@@ -104,6 +104,10 @@
         copyText.setSelectionRange(0, 99999); /* For mobile devices */
         document.execCommand("copy");
       },
+       facebook() {
+      var link = document.getElementById("refLink").value;
+      window.open("https://www.facebook.com/sharer/sharer.php?u=" + link + "&quote=Click%20this%20link%20to%20open%20a%20Trading%20account%20with%20Zebu%20and%20Gain%20an%20unified%20Trading%20and%20Investment%20Experience.%20" + link, "_blank");
+    },
       shareWithwhatsapp() {
         window.open(
           "https://wa.me/?text=Click%20this%20link%20to%20open%20a%20Trading%20account%20with%20Zebu%20and%20Gain%20an%20unified%20Trading%20and%20Investment%20Experience.%20" +
